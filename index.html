@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="cart-container">
+        <div class="cart-header">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <h1>Shopping Cart</h1>
+        </div>
+        <div class="quantity-display" id="quantityDisplay">Cart Quantity: 0</div>
+        <div class="max-quantity">Maximum quantity: 10 items</div>
+        <div class="error-message" id="errorMessage">Maximum quantity reached!</div>
+        
+        <div class="button-container">
+            <button onclick="addToCart()" id="addOneBtn">
+                <i class="fas fa-plus"></i> Add to Cart
+            </button>
+            <button onclick="addTwo()" id="addTwoBtn">
+                <i class="fas fa-plus"></i> +2
+            </button>
+            <button onclick="addThree()" id="addThreeBtn">
+                <i class="fas fa-plus"></i> +3
+            </button>
+            <button class="reset-button" onclick="resetCart()">
+                <i class="fas fa-trash"></i> Reset Cart
+            </button>
+        </div>
+        <button class="checkout-button" onclick="checkout()">
+            <i class="fas fa-shopping-bag"></i> Proceed to Checkout
+        </button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
